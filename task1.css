@@ -1,0 +1,115 @@
+/* Reset defanavt margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body and content */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Sticky navigation bar styling */
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #1f2937;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; /* Smooth transitions for background and color */
+}
+
+#navbar nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+#navbar nav li {
+    margin: 0;
+}
+
+#navbar nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+#navbar nav li a:hover {
+    color: #f39c12;
+    text-shadow: 0 0 5px rgba(243, 156, 18, 0.5);
+}
+
+/* Inverted navbar styling when scrolling */
+#navbar-inverted {
+    background-color: white;
+    color: black;
+}
+
+#navbar-inverted a {
+    color: #333;
+}
+
+#navbar-inverted a:hover {
+    color: #f39c12;
+}
+
+/* Main content styling */
+.hero {
+    flex: content;
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #1f2937, #4b5563);
+    color: white;
+    min-height: 150vh; /* Set to ensure scrolling */
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* Adding smooth transitions */
+a, button {
+    transition: all 0.3s ease;
+}
